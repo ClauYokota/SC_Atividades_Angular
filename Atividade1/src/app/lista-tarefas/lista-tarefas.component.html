@@ -1,0 +1,15 @@
+<div class="container">
+<div class="daew">
+
+<input type="text" #tarefaInput placeholder="Adicione uma tarefa">
+<br>
+
+<button id="add" (click)="add(tarefaInput.value)">Adicionar</button>
+
+<ul *ngFor="let tarefa of lista">
+    <li type="none" >{{tarefa.frase}}<button id="delet" (click)="deletar(tarefa.id)">&times;</button></li>
+</ul>
+
+<button id="deletAll" (click)="deleteAll()">Limpar Lista de Tarefas</button>
+</div>
+</div>

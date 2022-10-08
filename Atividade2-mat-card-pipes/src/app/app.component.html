@@ -1,0 +1,26 @@
+<div class="container">
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{produtos[0].nome | uppercase}}</mat-card-title>
+    <mat-card-subtitle>{{produtos[0].descricao}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <img
+    src="{{produtos[0].foto}} "
+    alt="Funko Eevee"
+    mat-card-image
+    >
+    
+  </mat-card-content>
+  <mat-card-footer>
+    <p>
+      <strong>{{produtos[0].preco | currency:'BRL'}}</strong>
+      <button>Comprar</button>
+    </p>
+    <p id="dados">Item postado no dia {{produtos[0].dataDeCriacao | date:'dd/MM/yy'}} por {{produtos[0].proprietarioDoPost}}</p>
+
+  </mat-card-footer>
+
+</mat-card>
+
+</div>

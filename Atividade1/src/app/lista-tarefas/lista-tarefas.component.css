@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#add{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 1px solid rgb(10, 52, 52);
+    background-color: rgb(10, 52, 52);
+    color:  rgb(139, 173, 208);
+}
+
+
+
+.daew{
+    text-align: center;
+}
+
+#delet{
+    border-radius: 50%;
+    margin-left: 10px;
+}
